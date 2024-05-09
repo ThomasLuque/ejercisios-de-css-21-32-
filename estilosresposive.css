@@ -1,0 +1,18 @@
+.elementos {
+    width: 80%;
+    margin: auto;
+    background-color: aqua;
+    text-align: center;
+}
+
+
+
+@media screen and (width:600px) {
+
+    .elementos {
+        width: 90%;
+    }
+
+    
+
+}

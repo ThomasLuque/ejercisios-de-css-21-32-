@@ -1,0 +1,202 @@
+body {
+    background-color:darksalmon
+}
+footer{
+    width: auto;
+    padding: 2rem 3rem;
+    background-color: darkgray;
+}
+
+header{
+    background-color: darkgray;
+    width: auto;
+    padding: 2rem 3rem;
+    color: white;
+    text-align: center;
+    
+}
+#imagen_border{
+    border:2px solid yellow ;
+    width: 500px;  
+}
+.youtube a:link{
+    color:brown;
+}
+.youtube a:hover{
+   color:blue; 
+}
+.CENTRADO{
+   justify-content: center;
+   align-items: center;
+}
+p {
+    color:white;
+    font-size: 20px;
+}
+.elemento-centrado{
+    width:500px;
+    height:80px;
+    background-color: black;
+    margin:auto;
+    padding: 20px;
+   text-align: center;
+}
+.boton{
+    background-color: white;
+    color: black;
+    border-color: red;
+    width: 100px;
+    height: 50px;
+}
+.boton:hover{
+    background-color:black;
+    color:aliceblue ;
+    cursor:pointer;
+    
+}
+#lista{
+    background-color: gray;
+    color:black;
+    list-style-type: armenian ;
+    display: inline-block;
+}
+#menu:link{
+color: black ;
+}
+#menu:hover{
+    color: blue;
+} 
+#formulario{
+    width: 500px;
+    height: 150px;
+    background-color: beige;
+    border:2px black solid;
+    border-radius: 10px;
+}
+.form{
+   
+    width: 500px;
+    padding: 20px;
+}
+.campo-nombre{
+    background-color: aquamarine;
+}
+.campo-apellido {
+    background-color: darkkhaki;
+}
+.campo-correo{
+    background-color: gold;
+}
+.boton-enviar:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+.texto-busqueda{
+    position: fixed;
+    width: 80%;
+    height: 2rem;
+    background-color: beige;
+    border-color: brown solid;
+    border-radius: 10px;
+}
+.columnas{
+    display: flex;
+}
+.columna-izquierda{
+    flex: 1;
+    background-color: aqua;
+   text-align: center;
+   height: 500px;
+}
+    /* padding: 20px; */
+.columna-derecha{
+    flex: 1;
+    background-color: chartreuse;
+    text-align: center;
+    height: 500px;
+}
+.elemento-animado {/* no funciona y no entendi */
+    width: 100px;
+    height: auto;
+    background-color: red;
+    animation:mover 2s infinite alternate, cambiar-color 2s infinite alternate;
+}
+
+@keyframes mover {
+    from {
+    transform: translateX(0);
+    }
+    to {
+    transform: translateX(200px);
+    }
+    }
+    @keyframes cambiar-color {
+    from {
+    background-color: red;
+    }
+    to {
+    background-color: blue;
+    }
+    }
+
+.formulario_busqueda{
+    display: flex;
+}
+.input-busqueda{
+    flex:1; /* no funciona */
+    border-color: black;
+    background-color: bisque;
+    border-radius: 10px;
+}
+.boton-busqueda{
+    border-radius: 10px;
+ 
+}
+.boton-busqueda:hover{
+    cursor: pointer;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 100%;
+    height: 500px;
+}
+.imagen{
+    position: relative;
+    overflow: hidden;  
+}
+.imagen img{
+    width: 100%;
+    transition:transform 0.5s ease;/* no funciona, el trasform no me lo toma como una propiedad*/
+}
+.imagen:hover img{
+    transform: scale(1.1);
+}
+.sombras{
+    background-color: bisque;
+    box-shadow: 5px, 5px, 5px rgba(0, 0, 0, 0.5);/* no se refleja en la web */
+    display: inline-block;
+}
+.texto-sombra{
+    color: black;
+}
+.menu-navegacion ul{
+    list-style: none;
+    padding: 0;
+}
+.menu-navegacion li{
+    display: inline-block;
+    position: relative;
+}
+.menu-navegacion .dropdown-contenido{
+    display: none;
+    background-color: cadetblue ;
+    position:absolute;
+   
+}
+.menu-navegacion .dropdown:hover .dropdown-contenido{
+    display: block;
+}
+.dropdown-contenido{
+    width: 100px;
+}
